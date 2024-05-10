@@ -4,7 +4,7 @@ ALBUMS
 GET http://localhost:3000/albums
 
 ### Get album by id for 1 album 
-GET http://localhost:3000/albums/6633d477a5f295c21c85f
+GET http://localhost:3000/albums/663e687bce3ea8b2cb19048e
 
 ### Create album
 POST http://localhost:3000/albums  HTTP/1.1
@@ -17,25 +17,25 @@ Content-Type: application/json
     "link": "https://open.spotify.com/album/64LU4c1nfjz1t4VnGhagcg?si=c_dOxJNMQYWAZTFrmZUAEw",
     "releaseDate": "27.10.2023",
     "genre": "Pop",
-    "labelName": "EM"
+    "labelName": "EMI"
 }
 
 ### Update album
-PUT http://localhost:3000/albums/663d1ed7e73d416a1d89fd41 HTTP/1.1
+PUT http://localhost:3000/albums/663e687bce3ea8b2cb198e HTTP/1.1
 Content-Type: application/json
 
 {
     "name": "2003 (Taylor's Version)",
-    "artist": "Taylor Swift",
-    "songsNumber": 22,
+    "artist": "a",
+    "songsNumber": 0,
     "link": "https://open.spotify.com/album/64LU4c1nfjz1t4VnGhagcg?si=c_dOxJNMQYWAZTFrmZUAEw",
     "releaseDate": "27.10.2023",
-    "genre": "Pop",
-    "labelName": "E"
+    "genre": "Rock",
+    "labelName": "EMI"
 }
 
 ### Delete album
-DELETE http://localhost:3000/albums/663d2150e73d416a1d89fd43 HTTP/1.1
+DELETE http://localhost:3000/albums/663e687bce3ea8b2cb19048e HTTP/1.1
 
 
 
@@ -47,7 +47,7 @@ BOOKS
 GET http://localhost:3000/books
 
 ### Get album by id for 1 album 
-GET http://localhost:3000/books/663bc82577a5f2995c21c86b
+GET http://localhost:3000/books/663d214be73d416a1d89fd42
 
 ### Create album
 POST http://localhost:3000/books  HTTP/1.1
@@ -64,7 +64,7 @@ Content-Type: application/json
 }
 
 ### Update album
-PUT http://localhost:3000/books/663bd9f97f5b72c5b55d49b2 HTTP/1.1
+PUT http://localhost:3000/books/663e80cc9c29e92b06e0223 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -78,4 +78,4 @@ Content-Type: application/json
 }
 
 ### Delete album
-DELETE http://localhost:3000/books/663bd9f97f5b72c5b55d49b2 HTTP/1.1
+DELETE http://localhost:3000/books/663e7eae9c29e92b06e02237 HTTP/1.1

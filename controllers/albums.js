@@ -44,10 +44,10 @@ const createAlbum = async (req,res) => {
             labelName: req.body.labelName 
         };
         const response = await mongodb.getDatabase().db().collection('albums').insertOne(album);
-        if (response.acknowledged) {
+        if (response.acknowledged) { 
             console.log('Created successfully');
             res.setHeader('Content-Type', 'application/json');
-            res.status(201).json(response);
+            res.status(204).json(response);
         } else {
             res.status(500).json(response.error || 'An error ocurred while creating the album :(');
         }
@@ -98,7 +98,7 @@ const deleteAlbum = async (req, res) => {
         if (response.deletedCount > 0) {
             console.log('Deleted successfully');
             res.setHeader('Content-Type', 'application/json');
-            res.status(200).send();
+            res.status(204).send();
         } else {
             res.status(500).json(response.error || 'Some error ocurred while deleting this album');
         }
