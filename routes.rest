@@ -4,38 +4,38 @@ ALBUMS
 GET http://localhost:3000/albums
 
 ### Get album by id for 1 album 
-GET http://localhost:3000/albums/663e687bce3ea8b2cb19048e
+GET http://localhost:3000/albums/663bd1c9e1a1ceb72d9248ed
 
 ### Create album
 POST http://localhost:3000/albums  HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "1989 (Taylor's Version)",
-    "artist": "Taylor Swift",
-    "songsNumber": 22,
-    "link": "https://open.spotify.com/album/64LU4c1nfjz1t4VnGhagcg?si=c_dOxJNMQYWAZTFrmZUAEw",
-    "releaseDate": "27.10.2023",
-    "genre": "Pop",
-    "labelName": "EMI"
+    "name": "Map Of The Soul: 7",
+    "artist": "BTS",
+    "songsNumber": 20,
+    "link": "https://open.spotify.com/album/5W1XY5ucNATjTULERvXx9j?si=4BFhX7iYTN-NMtcWO7UIrQ",
+    "releaseDate": "21.02.2020",
+    "genre": "K-Pop",
+    "labelName": "Bighit Entertainment"
 }
 
 ### Update album
-PUT http://localhost:3000/albums/663e687bce3ea8b2cb198e HTTP/1.1
+PUT http://localhost:3000/albums/663f7b6d252d1f52f35ace0f HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "2003 (Taylor's Version)",
-    "artist": "a",
-    "songsNumber": 0,
-    "link": "https://open.spotify.com/album/64LU4c1nfjz1t4VnGhagcg?si=c_dOxJNMQYWAZTFrmZUAEw",
-    "releaseDate": "27.10.2023",
-    "genre": "Rock",
-    "labelName": "EMI"
+    "name": "Map Of The Soul: 7",
+    "artist": "asd",
+    "songsNumber": 20,
+    "link": "https://open.spotify.com/album/5W1XY5ucNATjTULERvXx9j?si=4BFhX7iYTN-NMtcWO7UIrQ",
+    "releaseDate": "21.02.2020",
+    "genre": "K-Pop",
+    "labelName": "Bighit Entertainment"
 }
 
 ### Delete album
-DELETE http://localhost:3000/albums/663e687bce3ea8b2cb19048e HTTP/1.1
+DELETE http://localhost:3000/albums/663f7b6d252d1f52f35ace0f HTTP/1.1
 
 
 
@@ -47,7 +47,7 @@ BOOKS
 GET http://localhost:3000/books
 
 ### Get album by id for 1 album 
-GET http://localhost:3000/books/663d214be73d416a1d89fd42
+GET http://localhost:3000/books/663bc7dd77a5f2995c21c868
 
 ### Create album
 POST http://localhost:3000/books  HTTP/1.1
@@ -64,7 +64,7 @@ Content-Type: application/json
 }
 
 ### Update album
-PUT http://localhost:3000/books/663e80cc9c29e92b06e0223 HTTP/1.1
+PUT http://localhost:3000/books/663f7ba6252d1f52f35ace10 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -78,4 +78,4 @@ Content-Type: application/json
 }
 
 ### Delete album
-DELETE http://localhost:3000/books/663e7eae9c29e92b06e02237 HTTP/1.1
+DELETE http://localhost:3000/books/663f7ba6252d1f52f35ace10 HTTP/1.1
