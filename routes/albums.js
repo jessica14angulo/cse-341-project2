@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const albumsController = require('../controllers/albums');
 const validation = require('../middleware/validate');
-const {isAuthenticated} = require('../middleware/authenticate');
+const { isAuthenticated } = require('../middleware/authenticate');
 
 router.get('/', albumsController.getAll);
 

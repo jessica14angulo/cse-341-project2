@@ -5,7 +5,7 @@ const doc = {
         title: 'Project 2 Api',
         description: 'Albums and Books Api'
     },
-    host: 'localhost:3000',
+    host: 'project2-zsgz.onrender.com',
     schemes: ['http', 'https']
 };
 
